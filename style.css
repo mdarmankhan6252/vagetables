@@ -1,0 +1,254 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+.banner{
+   width: 80%;
+   max-width: 1300px;
+   margin: auto;
+   height: 70vh;
+}
+nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: auto;
+}
+nav img{
+   width: 80px;
+}
+.nav-links{
+   flex: 1;
+   text-align: right;
+   padding: 25px 0;
+}
+.nav-links ul li{
+   display: inline-block;
+   margin-left: 25px;
+}
+.nav-links ul li::after{
+   content: '';
+   width: 0;
+   height: 2px;
+   display: block;
+   background-color: #ff9101;
+   transition: 0.5s;
+   margin: auto;
+}
+.nav-links ul li:hover:after{
+   width: 100%;
+}
+.nav-links ul li a{
+   text-decoration: none;
+   color: #ff9101;
+   font-size: 16px;
+}
+.row{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.banner-col{
+   flex-basis: 48%;
+   margin-top: 100px;
+}
+.banner-col img{
+   width: 100%;
+}
+.banner-col h1{
+   font-size: 46px;
+   width: 100%;
+}
+.banner-col h1 span{
+   color: #ff9101;
+}
+.banner-col p{
+   color: #777;
+   font-size: 14px;
+   margin-top: 15px;
+   font-weight: 300;
+   line-height: 24px;
+}
+.btn{
+   display: inline-block;
+   margin-top: 30px;
+   border: 1px solid #ff9101;
+   padding: 10px 24px;
+   border-radius: 30px;
+   color: #ff9101;
+   text-decoration: none;
+   font-weight: 600;
+   transition: 0.5s;
+}
+.btn:hover{
+   background-color: #ff9101;
+   color: #fff;
+}
+ 
+/* ---------------products------------- */
+
+.products{
+   width: 80%;
+   max-width: 1300px;
+   margin: auto;
+   text-align: center;
+}
+.products h2{
+   font-size: 32px;
+   margin-bottom: 7px;
+}
+.all-p{
+   color: #777;
+   font-size: 15px;
+   font-weight: 300;
+}
+.products-col{
+   flex-basis: 23%;
+   max-height: 700px;
+   background-color: #f2f2f2;
+   padding: 15px 10px;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   margin-top: 70px;
+   transition: 0.5s;
+   margin-bottom: 5%;
+}
+.products-col:hover{
+   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.products-col img{
+   width: 100%;
+}
+.products-col h3{
+   margin-bottom: 5px;
+   color: #ff9100;
+}
+.products-col:hover h3{
+   color: #0a860a;
+}
+.btn-2{
+   padding: 6px 16px;
+   border: 1px solid #0a860a;
+   background-color: transparent;
+   color: #0a860a;
+   margin-top: 15px;
+}
+.btn-2:hover{
+   background-color: #0a860a;
+}
+
+/* ---------sub-banner------------ */
+
+.sub-banner{
+   width: 100%;
+   background: linear-gradient(rgba(0,0,44,0.7),rgba(0,0,44,0.7)),url(img/banner-2.jpg);
+   height: 40vh;
+   background-size: cover;
+   background-position: center;
+   margin-top: 150px;
+   position: relative;
+   margin-bottom: 5%;
+}
+.text-area{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   width: 100%;
+   margin: auto;
+   color: #fff;
+}
+.text-area h1{
+   font-size: 52px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 500;
+}
+.text-area p{
+   font-size: 16px;
+   margin: 10px 0 30px;
+}
+.btn-3{
+   border: 1px solid #fff;
+   padding: 10px 22px;
+   color: #fff;
+   text-decoration: none;
+   font-size: 15px;
+   border-radius: 10px;
+   transition: 0.5s;
+}
+.btn-3:hover{
+   border: 1px solid #c47004;
+   background-color: #c47004;
+   color: #fff;
+}
+
+/* ----------footer---------- */
+
+footer{
+   width: 80%;
+   margin: auto;
+   max-width: 1300px;
+   padding: 20px 0 30px;
+}
+footer h3{
+   text-align: center;
+   font-size: 24px;
+   padding: 50px 0;
+
+}
+footer p{
+   text-align: center;
+   font-size: 16px;
+   margin-top: 50px;
+   color: #777;
+   font-weight: 300;
+}
+.footer-col li{
+   list-style:circle;
+   line-height: 26px;
+}
+.footer-col li a{
+   text-decoration: none;
+   color: #000080;
+}
+.footer-col li a:hover{
+   color: #ff9101;
+   text-decoration: underline;
+}
+.orange li a{
+   color: #ff9101;
+}
+.orange li a:hover{
+   color: #000080;
+}
+.row-2{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+@media(max-width:750px){
+   .row{
+      display: block;
+   }
+   .banner{
+      width: 80%;
+      height: 100vh;
+      margin: auto;
+   }
+   .banner-col h1{
+      font-size: 36px;
+   }
+   .latest-product{
+      margin-top: 100px;
+   }
+   .text-area h1{
+      font-size: 28px;
+   }
+   .text-area p{
+      font-size: 13px;
+   }
+   
+}
